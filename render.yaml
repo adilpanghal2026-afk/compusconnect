@@ -1,0 +1,14 @@
+services:
+  - type: web
+    runtime: static
+    name: campusconnect-frontend
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://compusconnect-w5cr.onrender.com

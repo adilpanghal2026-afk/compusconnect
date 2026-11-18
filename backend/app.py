@@ -12,6 +12,28 @@ load_dotenv()
 
 app = Flask(__name__)
 
+# The API has no cookie-based auth; allow the frontend origin(s) from the
+# environment, with a public wildcard default for this unauthenticated API.
+configured_origins = os.environ.get("FRONTEND_ORIGINS", "*").strip()
+allowed_origins = (
+    "*" if configured_origins == "*"
+    else [origin.strip() for origin in configured_origins.split(",") if origin.strip()]
+)
+
+
+@app.after_request
+def add_cors_headers(response):
+    origin = request.headers.get("Origin")
+    if allowed_origins == "*":
+        response.headers["Access-Control-Allow-Origin"] = "*"
+    elif origin in allowed_origins:
+        response.headers["Access-Control-Allow-Origin"] = origin
+        response.vary.add("Origin")
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type"
+    response.headers["Access-Control-Max-Age"] = "600"
+    return response
+
 supabase_url = os.environ.get("SUPABASE_URL")
 supabase_key = os.environ.get("SUPABASE_PUBLISHABLE_KEY")
 if not supabase_url or not supabase_key:

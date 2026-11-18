@@ -18,12 +18,13 @@ add Supabase authentication or database authorization policies.
 
 ## Deploy to Render
 
-The repository includes a root-level `render.yaml` Blueprint. Push this project
-to a Git provider, create a new Blueprint in Render from that repository, and
-provide the requested `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` values.
-Render builds from `backend`, installs `requirements.txt`, and runs the app with
-Gunicorn. The `/healthz` route is configured as the deploy health check. After
-the first deploy, Render provides the public `onrender.com` service URL.
+The Render Blueprint configuration is in `backend/render.yaml`. It builds from
+`backend`, installs `requirements.txt`, and runs the app with Gunicorn. The
+`/healthz` route is configured as the deploy health check. Set
+`SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` in the Render environment. The API
+returns CORS headers for all origins by default; set `FRONTEND_ORIGINS` in
+Render to a comma-separated list of specific frontend origins if you prefer.
+Redeploy the backend after changing CORS settings or backend code.
 
 ## Endpoints
 
