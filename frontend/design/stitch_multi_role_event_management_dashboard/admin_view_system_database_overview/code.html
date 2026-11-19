@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#0b1326", "secondary": "#d0bcff", "surface-bright": "#31394d", "on-surface": "#dae2fd", "on-secondary": "#3c0091", "tertiary-fixed": "#6ffbbe", "surface-container-low": "#131b2e", "primary": "#c0c1ff", "secondary-fixed": "#e9ddff", "error-container": "#93000a", "surface": "#0b1326", "on-tertiary-fixed": "#002113", "outline-variant": "#464554", "error": "#ffb4ab", "primary-container": "#8083ff", "on-primary-container": "#0d0096", "tertiary": "#4edea3", "surface-tint": "#c0c1ff", "inverse-primary": "#494bd6", "on-primary": "#1000a9", "primary-fixed": "#e1e0ff", "surface-container-lowest": "#060e20", "on-error-container": "#ffdad6", "surface-container-high": "#222a3d", "on-surface-variant": "#c7c4d7", "on-secondary-fixed-variant": "#5516be", "primary-fixed-dim": "#c0c1ff", "surface-variant": "#2d3449", "on-tertiary-container": "#000703", "surface-container-highest": "#2d3449", "on-secondary-fixed": "#23005c", "on-background": "#dae2fd", "on-error": "#690005", "on-tertiary": "#003824", "on-primary-fixed-variant": "#2f2ebe", "inverse-surface": "#dae2fd", "on-tertiary-fixed-variant": "#005236", "surface-container": "#171f33", "tertiary-fixed-dim": "#4edea3", "secondary-container": "#571bc1", "secondary-fixed-dim": "#d0bcff", "outline": "#908fa0", "background": "#0b1326", "on-secondary-container": "#c4abff", "tertiary-container": "#00885d", "inverse-on-surface": "#283044", "on-primary-fixed": "#07006c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "margin": "2rem", "space-lg": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "label-sm": ["Inter"], "body-sm": ["Inter"], "title-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "code": ["Inter"], "display-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "code": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest border-r border-surface-variant/40 z-50 flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-surface-variant/30"><img alt="EventSphere Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDF2AawENNnultlpfdP8tZaLCQBhjcE1nknJj1QmyIZD3YiisjyzrRpP1mQbaGKlJDa7Lgr-Eo7p9yXpjlirLSmubcEK7s0K8EEkbr_1U6OCQeGGOdsqzP9qJVwWhdnEt9FPjbtfpKDCbIH1JK7t2TGdlrYkm1-HnBhfkEMfpxpvhZsYpMZ8JBNS3_Oia-eNfrEv75qm8Z66_8q-aOSU4Gy6lP9ddz8bsvU_Hc2ceug_g"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">EventSphere</span></div><div class="p-space-md"><div class="p-space-sm rounded-xl bg-surface-container border border-outline-variant/30 flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-label-md text-label-md font-semibold text-on-surface">Context Switch</span></div><span class="material-symbols-outlined text-[18px] text-outline">swap_vert</span></div></div><nav class="flex-1 px-space-sm space-y-1 overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><div class="px-space-md pt-space-xs pb-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">Main Directory</div><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="explore-events" href="#"><span class="material-symbols-outlined text-[20px]">explore</span>Explore Events</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="my-registrations" href="#"><span class="material-symbols-outlined text-[20px]">confirmation_number</span>My Registrations</a><div class="px-space-md pt-space-md pb-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">Management</div><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-md text-label-md" data-path="organizer-hub" href="#"><span class="material-symbols-outlined text-[20px]">hub</span>Organizer Hub</a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold" data-path="admin-overview" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>Admin Overview</a></nav><div class="p-space-md border-t border-surface-variant/30"><div class="flex items-center gap-space-sm p-space-xs rounded-xl bg-surface-container/60"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB10un7UMgkJ9iiFpPm-teha9B6scrTo9YYOY8Clf3FjdM7KqXgi0NfhVsDQNxgf84rhtUSwu-NJOJYMqsStR_ob--tDNVIP3zaiCYtNmRH-_4DWvQbJyrrPxBVMLneg9wXl0bpCZO6s4HTwJcnJ0CEQu860Z_bpOlg2_ZRyEoux8Iokmn_ozWK9EAIZtOcY1UDfSzp73T68bx9BMUdyce3qe3Tu32velICrsL9Mbs3"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sarah Chen</span><span class="font-label-sm text-label-sm text-tertiary truncate">Active Session</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-dim/80 backdrop-blur-xl border-b border-surface-variant/40 z-40 flex items-center justify-between px-space-lg gap-space-md"><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline pointer-events-none text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-space-md py-space-xs rounded-lg border border-outline-variant/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Search registrations, attendees, events..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="relative group"><button class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container rounded-full border border-outline-variant/50 hover:border-outline text-on-surface transition-colors" type="button"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-md text-label-md font-semibold">Organizer View</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></button><div class="absolute right-0 mt-space-xs w-56 py-space-xs bg-surface-container-high/95 backdrop-blur-xl rounded-xl border border-outline-variant/40 shadow-xl hidden group-hover:block z-50"><div class="px-space-md py-space-xs text-outline font-label-sm text-label-sm uppercase tracking-wider">Select Active Role</div><a class="flex items-center justify-between px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant font-label-md text-label-md" href="#"><span class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-tertiary"></span>Student View</span></a><a class="flex items-center justify-between px-space-md py-space-xs text-on-surface hover:bg-surface-variant font-label-md text-label-md" href="#"><span class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-primary"></span>Organizer View</span><span class="material-symbols-outlined text-[16px] text-primary">check</span></a><a class="flex items-center justify-between px-space-md py-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-variant font-label-md text-label-md" href="#"><span class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-secondary"></span>Admin View</span></a></div></div><div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-tertiary-container/30 border border-tertiary/20 text-tertiary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Active Session (No Auth Required)</div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB10un7UMgkJ9iiFpPm-teha9B6scrTo9YYOY8Clf3FjdM7KqXgi0NfhVsDQNxgf84rhtUSwu-NJOJYMqsStR_ob--tDNVIP3zaiCYtNmRH-_4DWvQbJyrrPxBVMLneg9wXl0bpCZO6s4HTwJcnJ0CEQu860Z_bpOlg2_ZRyEoux8Iokmn_ozWK9EAIZtOcY1UDfSzp73T68bx9BMUdyce3qe3Tu32velICrsL9Mbs3"/></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="p-space-lg max-w-[1440px] mx-auto w-full space-y-space-xl">
+<!-- Title & System Diagnostics Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+<span>Core Infrastructure · PostgreSQL v16.2 · Read/Write Primary</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Admin System Console</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Global visibility across users, event capacities, registration quotas, and API health telemetry.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="px-space-md py-space-xs rounded-xl bg-surface-container-high flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">admin_panel_settings</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Active Context</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Admin Root Clearance</span>
+</div>
+</div>
+<button class="p-space-sm rounded-xl bg-surface-container hover:bg-surface-bright transition-all text-on-surface flex items-center shadow-sm" id="refresh-telemetry-btn">
+<span class="material-symbols-outlined text-[20px] transition-transform duration-500" id="refresh-icon">sync</span>
+</button>
+</div>
+</div>
+<!-- 1. Top System Health Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Metric 1: Users -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low relative overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="absolute -right-4 -top-4 w-28 h-28 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Users</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">2,840</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center">+14% m/m</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+</div>
+<div class="pt-space-md space-y-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>2,710 Students</span>
+<span>122 Orgs</span>
+<span class="text-secondary font-semibold">8 Admins</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 82%"></div>
+<div class="bg-tertiary h-full" style="width: 15%"></div>
+<div class="bg-secondary h-full" style="width: 3%"></div>
+</div>
+</div>
+</div>
+<!-- Metric 2: Events -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low relative overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="absolute -right-4 -top-4 w-28 h-28 bg-tertiary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Events</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">48</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold flex items-center">Active DB</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">event_note</span>
+</div>
+</div>
+<div class="pt-space-md space-y-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 42 Open</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 4 At Cap</span>
+<span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span> 2 Closed</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="bg-tertiary h-full" style="width: 87.5%"></div>
+<div class="bg-primary h-full" style="width: 8.3%"></div>
+<div class="bg-outline h-full" style="width: 4.2%"></div>
+</div>
+</div>
+</div>
+<!-- Metric 3: Registrations -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low relative overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="absolute -right-4 -top-4 w-28 h-28 bg-secondary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Registrations</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">5,420</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">All-time</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Avg. fill rate per event</span>
+<span class="font-code text-code text-secondary font-bold">89.4%</span>
+</div>
+</div>
+<!-- Metric 4: API Telemetry -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low relative overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="absolute -right-4 -top-4 w-28 h-28 bg-tertiary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">API Gateway Status</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shadow-[0_0_12px_rgba(78,222,163,0.8)]"></span>
+<span class="font-title-md text-title-md font-semibold text-tertiary">All 5 Operational</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">dns</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">99.98% uptime</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-tertiary font-code text-code">14ms latency</span>
+</div>
+</div>
+</div>
+<!-- Middle Split: ER Diagram & Quick Admin Action Workbench -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Interactive Schema ER Model (5 cols) -->
+<div class="xl:col-span-5 p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<h2 class="font-title-md text-title-md text-on-surface">Relational Entity Architecture</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded text-outline font-code text-label-sm bg-surface-container">FK ENFORCED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Foreign key relationships with cascading integrity constraints across accounts, event instances, and registration ledger entries.
+        </p>
+<!-- Dynamic ER Diagram Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest space-y-space-sm relative">
+<!-- Users Entity Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-high transition-all hover:bg-surface-variant cursor-pointer" onclick="switchTableTab('users')">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-code text-code font-bold text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">table_rows</span> users
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Primary Entity</span>
+</div>
+<div class="grid grid-cols-2 gap-1 font-code text-label-sm text-on-surface-variant pt-space-xs">
+<span class="text-secondary">PK • id (UUID)</span>
+<span>role (enum)</span>
+<span>email (varchar)</span>
+<span>created_at (ts)</span>
+</div>
+</div>
+<!-- Connector 1 -->
+<div class="flex items-center justify-center py-0.5">
+<div class="flex items-center gap-space-xs font-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+<span>1 : N (organizer_id)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</div>
+</div>
+<!-- Events Entity Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-high transition-all hover:bg-surface-variant cursor-pointer ring-1 ring-primary/40" onclick="switchTableTab('events')">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-code text-code font-bold text-tertiary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">table_chart</span> events
+              </span>
+<span class="font-label-sm text-label-sm text-tertiary">Selected Active</span>
+</div>
+<div class="grid grid-cols-2 gap-1 font-code text-label-sm text-on-surface-variant pt-space-xs">
+<span class="text-secondary">PK • id (UUID)</span>
+<span class="text-primary font-bold">FK • organizer_id</span>
+<span>max_capacity (int)</span>
+<span>status (varchar)</span>
+<span>starts_at (ts)</span>
+<span>waitlist_count (int)</span>
+</div>
+</div>
+<!-- Connector 2 -->
+<div class="flex items-center justify-center py-0.5">
+<div class="flex items-center gap-space-xs font-code text-[11px] text-outline">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+<span>1 : N (event_id & user_id)</span>
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span>
+</div>
+</div>
+<!-- Registrations Entity Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-high transition-all hover:bg-surface-variant cursor-pointer" onclick="switchTableTab('registrations')">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-code text-code font-bold text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">join_inner</span> registrations
+              </span>
+<span class="font-label-sm text-label-sm text-outline">Junction / Ledger</span>
+</div>
+<div class="grid grid-cols-2 gap-1 font-code text-label-sm text-on-surface-variant pt-space-xs">
+<span class="text-secondary">PK • id (UUID)</span>
+<span class="text-tertiary font-bold">FK • event_id</span>
+<span class="text-primary font-bold">FK • user_id</span>
+<span>status (confirmed)</span>
+<span>ticket_hash (sha256)</span>
+<span>check_in_time (ts)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline pt-space-xs">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary"></span> ACID Isolation: Serializable</span>
+<span class="text-secondary">Replica Sync: 0ms</span>
+</div>
+</div>
+<!-- Quick Admin Override Workbench (7 cols) -->
+<div class="xl:col-span-7 p-space-lg rounded-2xl bg-surface-container-low shadow-sm flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h2 class="font-title-md text-title-md text-on-surface">Targeted Capacity & Status Override</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded text-secondary font-code text-label-sm bg-surface-container">SYSTEM LEVEL 4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Direct database mutation panel. Overrides bypass caching layers and update registration locks immediately.
+        </p>
+<!-- Override Controls Body -->
+<div class="p-space-md rounded-xl bg-surface-container space-y-space-md">
+<!-- Event Selector -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider" for="target-event">Select Target Event</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-md py-space-sm rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="target-event">
+<option value="evt-901">EVT-901: Global Hackathon 2025 (organizer: Chen, S.) [Cap: 450/450 - At Cap]</option>
+<option value="evt-441">EVT-441: AI Autonomous Agents Symposium [Cap: 210/250 - Open]</option>
+<option value="evt-238">EVT-238: Venture Capital Pitch Night [Cap: 80/80 - At Cap]</option>
+<option value="evt-109">EVT-109: Distributed Cloud Systems Bootcamp [Cap: 120/120 - Closed]</option>
+</select>
+</div>
+<!-- Live Slider & Direct Input Combo -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-outline uppercase tracking-wider" for="capacity-slider">Adjust Maximum Quota Capacity</label>
+<div class="flex items-center gap-space-xs font-code text-code">
+<span class="text-outline">Slots:</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-bold" id="capacity-badge">450</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="capacity-slider" max="1000" min="50" step="10" type="range" value="450"/>
+<input class="w-24 px-space-sm py-space-xs rounded bg-surface-container-lowest text-on-surface font-code text-body-sm text-center focus:outline-none focus:ring-1 focus:ring-primary" id="capacity-input" max="1000" min="50" type="number" value="450"/>
+</div>
+</div>
+<!-- Status Mutator -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Change Event Lifecycle Status</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="status-btn px-space-sm py-space-xs rounded-lg text-center font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-on-surface" data-status="open" type="button">
+                Open
+              </button>
+<button class="status-btn px-space-sm py-space-xs rounded-lg text-center font-label-md text-label-md transition-all bg-primary-container text-on-primary-container font-bold" data-status="at-capacity" type="button">
+                At Capacity
+              </button>
+<button class="status-btn px-space-sm py-space-xs rounded-lg text-center font-label-md text-label-md transition-all bg-surface-container-high text-on-surface-variant hover:text-on-surface" data-status="closed" type="button">
+                Closed
+              </button>
+</div>
+</div>
+<!-- Action and Simulation Buttons -->
+<div class="pt-space-xs flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="w-full sm:flex-1 py-space-xs px-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-surface font-label-md text-label-md font-semibold hover:opacity-95 transition-all shadow-md flex items-center justify-center gap-space-xs" id="apply-override-btn">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+              Commit Capacity Override
+            </button>
+<button class="w-full sm:w-auto py-space-xs px-space-md rounded-xl bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-error transition-all font-label-md text-label-md flex items-center justify-center gap-space-xs" id="simulate-conflict-btn">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+              Simulate 409 Conflict
+            </button>
+</div>
+</div>
+<!-- Terminal Output / Feedback Stream -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest font-code text-code text-on-surface-variant h-20 overflow-y-auto space-y-1" id="action-console-feed">
+<div class="text-tertiary">[SYSTEM READY] Connection pool: 24 active sessions. Replica delay: 0.12ms</div>
+<div class="text-outline">[LOG 14:02:18] EVT-901 lock acquired. Transaction pending state confirmation.</div>
+</div>
+</div>
+</div>
+<!-- 2. Database Schema Explorer & Interactive Data Viewer -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-sm space-y-space-md">
+<!-- Table Header Bar & Tabs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">database</span>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface">Data Store Inspector</h2>
+<p class="font-body-sm text-body-sm text-outline">Real-time relational table projection with foreign key resolution</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl">
+<button class="tab-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md bg-surface-container-high text-on-surface font-bold transition-all flex items-center gap-1.5" id="tab-events" onclick="switchTableTab('events')">
+<span class="material-symbols-outlined text-[16px] text-tertiary">table_chart</span>
+            events
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-tertiary/20 text-tertiary">48</span>
+</button>
+<button class="tab-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="tab-users" onclick="switchTableTab('users')">
+<span class="material-symbols-outlined text-[16px] text-primary">group</span>
+            users
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-surface-variant text-outline">2,840</span>
+</button>
+<button class="tab-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="tab-registrations" onclick="switchTableTab('registrations')">
+<span class="material-symbols-outlined text-[16px] text-secondary">confirmation_number</span>
+            registrations
+            <span class="px-1.5 py-0.2 rounded text-[10px] bg-surface-variant text-outline">5,420</span>
+</button>
+<button class="tab-btn px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1.5" id="tab-traffic" onclick="switchTableTab('traffic')">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+            API Traffic
+            <span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+</button>
+</div>
+</div>
+<!-- Live Search & Filtering Tools inside Table -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-space-sm top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-space-md py-space-xs rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="table-search" placeholder="Filter rows by UUID, string, or status..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end font-label-sm text-label-sm">
+<span class="text-outline">Showing live 5 of 48 records</span>
+<button class="px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-bright text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">file_download</span> Export CSV
+          </button>
+</div>
+</div>
+<!-- Dynamic Data Table Container -->
+<div class="rounded-xl overflow-x-auto bg-surface-container-lowest shadow-inner">
+<!-- Table: Events View (Active Default) -->
+<table class="w-full text-left font-body-sm text-body-sm border-collapse" id="view-events">
+<thead>
+<tr class="bg-surface-container text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">UUID (PK)</th>
+<th class="py-space-sm px-space-md">Event Title</th>
+<th class="py-space-sm px-space-md">Organizer (FK)</th>
+<th class="py-space-sm px-space-md">Capacity / Reg</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md text-right">Quick Override</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/20 font-code text-code">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">evt-901-bf18</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface font-semibold">Global Hackathon 2025</td>
+<td class="py-space-md px-space-md text-primary">usr-881 (Chen, S.)</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface font-bold">450</span><span class="text-outline"> / 450</span>
+<div class="w-24 h-1 bg-surface-container-highest rounded-full mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm font-semibold">at_capacity</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface text-[12px] font-label-sm" onclick="populateWorkbench('EVT-901: Global Hackathon 2025', 450, 'at-capacity')">
+                  Modify Quota
+                </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">evt-441-ca02</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface font-semibold">AI Autonomous Agents Symposium</td>
+<td class="py-space-md px-space-md text-primary">usr-724 (Patel, R.)</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface font-bold">210</span><span class="text-outline"> / 250</span>
+<div class="w-24 h-1 bg-surface-container-highest rounded-full mt-1">
+<div class="bg-tertiary h-full rounded-full" style="width: 84%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm font-semibold">open</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface text-[12px] font-label-sm" onclick="populateWorkbench('EVT-441: AI Autonomous Agents Symposium', 250, 'open')">
+                  Modify Quota
+                </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">evt-238-d99c</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface font-semibold">Venture Capital Pitch Night</td>
+<td class="py-space-md px-space-md text-primary">usr-881 (Chen, S.)</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface font-bold">80</span><span class="text-outline"> / 80</span>
+<div class="w-24 h-1 bg-surface-container-highest rounded-full mt-1">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm font-semibold">at_capacity</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface text-[12px] font-label-sm" onclick="populateWorkbench('EVT-238: Venture Capital Pitch Night', 80, 'at-capacity')">
+                  Modify Quota
+                </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">evt-109-aa74</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface font-semibold">Distributed Cloud Systems Bootcamp</td>
+<td class="py-space-md px-space-md text-primary">usr-403 (Kowalski, J.)</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface font-bold">120</span><span class="text-outline"> / 120</span>
+<div class="w-24 h-1 bg-surface-container-highest rounded-full mt-1">
+<div class="bg-outline h-full rounded-full" style="width: 100%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-variant text-outline font-label-sm font-semibold">closed</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface text-[12px] font-label-sm" onclick="populateWorkbench('EVT-109: Distributed Cloud Systems Bootcamp', 120, 'closed')">
+                  Modify Quota
+                </button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">evt-077-ef51</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface font-semibold">Design Systems Masterclass</td>
+<td class="py-space-md px-space-md text-primary">usr-110 (Mendoza, A.)</td>
+<td class="py-space-md px-space-md">
+<span class="text-on-surface font-bold">45</span><span class="text-outline"> / 90</span>
+<div class="w-24 h-1 bg-surface-container-highest rounded-full mt-1">
+<div class="bg-tertiary h-full rounded-full" style="width: 50%"></div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm font-semibold">open</span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<button class="px-space-xs py-1 rounded bg-surface-container hover:bg-surface-bright text-on-surface text-[12px] font-label-sm" onclick="populateWorkbench('EVT-077: Design Systems Masterclass', 90, 'open')">
+                  Modify Quota
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Table: Users View (Hidden initially) -->
+<table class="w-full text-left font-body-sm text-body-sm border-collapse hidden" id="view-users">
+<thead>
+<tr class="bg-surface-container text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">User UUID</th>
+<th class="py-space-sm px-space-md">Name & Email</th>
+<th class="py-space-sm px-space-md">System Role</th>
+<th class="py-space-sm px-space-md">Created At</th>
+<th class="py-space-sm px-space-md">Registrations</th>
+<th class="py-space-sm px-space-md text-right">Permissions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/20 font-code text-code">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">usr-881-x002</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface">Sarah Chen · <span class="text-outline">s.chen@university.edu</span></td>
+<td class="py-space-md px-space-md"><span class="px-space-xs py-0.5 rounded bg-primary/20 text-primary font-semibold font-label-sm">ORGANIZER</span></td>
+<td class="py-space-md px-space-md text-outline">2024-09-12 11:42 UTC</td>
+<td class="py-space-md px-space-md text-on-surface">14 hosted</td>
+<td class="py-space-md px-space-md text-right"><span class="text-tertiary">CAN_PUBLISH</span></td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">usr-008-adm1</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface">David Vance · <span class="text-outline">d.vance@admin.eventsphere.edu</span></td>
+<td class="py-space-md px-space-md"><span class="px-space-xs py-0.5 rounded bg-secondary-container/40 text-secondary font-bold font-label-sm">ADMIN</span></td>
+<td class="py-space-md px-space-md text-outline">2024-01-01 00:00 UTC</td>
+<td class="py-space-md px-space-md text-outline">—</td>
+<td class="py-space-md px-space-md text-right"><span class="text-secondary font-bold">SUPERUSER</span></td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-secondary">usr-104-st99</td>
+<td class="py-space-md px-space-md font-body-sm text-on-surface">Alex Rivera · <span class="text-outline">arivera2@student.edu</span></td>
+<td class="py-space-md px-space-md"><span class="px-space-xs py-0.5 rounded bg-surface-variant text-outline font-label-sm">STUDENT</span></td>
+<td class="py-space-md px-space-md text-outline">2025-01-14 09:21 UTC</td>
+<td class="py-space-md px-space-md text-on-surface">6 registered</td>
+<td class="py-space-md px-space-md text-right"><span class="text-outline">STANDARD</span></td>
+</tr>
+</tbody>
+</table>
+<!-- Table: Registrations View (Hidden initially) -->
+<table class="w-full text-left font-body-sm text-body-sm border-collapse hidden" id="view-registrations">
+<thead>
+<tr class="bg-surface-container text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md">Reg Ticket Hash</th>
+<th class="py-space-sm px-space-md">Event (FK)</th>
+<th class="py-space-sm px-space-md">User (FK)</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md">Confirmed Timestamp</th>
+<th class="py-space-sm px-space-md text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-variant/20 font-code text-code">
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-tertiary">tk_7fe90a...cb</td>
+<td class="py-space-md px-space-md text-secondary">evt-901-bf18</td>
+<td class="py-space-md px-space-md text-primary">usr-104-st99</td>
+<td class="py-space-md px-space-md"><span class="px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm">CONFIRMED</span></td>
+<td class="py-space-md px-space-md text-outline">2025-02-18 14:02:11</td>
+<td class="py-space-md px-space-md text-right"><button class="text-error hover:underline text-[12px]">Revoke</button></td>
+</tr>
+<tr class="hover:bg-surface-container/50 transition-colors">
+<td class="py-space-md px-space-md text-tertiary">tk_41da02...89</td>
+<td class="py-space-md px-space-md text-secondary">evt-441-ca02</td>
+<td class="py-space-md px-space-md text-primary">usr-992-st12</td>
+<td class="py-space-md px-space-md"><span class="px-space-xs py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm">CONFIRMED</span></td>
+<td class="py-space-md px-space-md text-outline">2025-02-18 13:58:44</td>
+<td class="py-space-md px-space-md text-right"><button class="text-error hover:underline text-[12px]">Revoke</button></td>
+</tr>
+</tbody>
+</table>
+<!-- Table: API Traffic View (Hidden initially) -->
+<div class="p-space-lg space-y-space-md hidden" id="view-traffic">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container space-y-1">
+<span class="font-label-sm text-outline uppercase">POST /api/v1/registrations</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-on-surface font-bold">142 req/s</span>
+<span class="text-tertiary font-code text-label-sm">200 OK (99.2%)</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container space-y-1">
+<span class="font-label-sm text-outline uppercase">GET /api/v1/events/capacity</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-on-surface font-bold">890 req/s</span>
+<span class="text-tertiary font-code text-label-sm">11ms p95</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container space-y-1">
+<span class="font-label-sm text-outline uppercase">PATCH /api/v1/events/status</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-sm text-on-surface font-bold">1.2 req/s</span>
+<span class="text-secondary font-code text-label-sm">Auth Locked</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container font-code text-code text-outline space-y-1">
+<div>[GATEWAY INGRESS] Rate limiting: Token bucket policy (10,000 burst / IP)</div>
+<div class="text-tertiary">[HEALTH CHECK] GET /healthz 200 OK across us-east, eu-central, ap-northeast</div>
+<div>[SOCKET CONNECTIONS] 412 active WebSocket sessions for capacity delta broadcasting</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab switching state
+  function switchTableTab(tab) {
+    const tabs = ['events', 'users', 'registrations', 'traffic'];
+    tabs.forEach(t => {
+      const btn = document.getElementById(`tab-${t}`);
+      const view = document.getElementById(`view-${t}`);
+      if (t === tab) {
+        btn.classList.add('bg-surface-container-high', 'text-on-surface', 'font-bold');
+        btn.classList.remove('text-on-surface-variant');
+        view.classList.remove('hidden');
+      } else {
+        btn.classList.remove('bg-surface-container-high', 'text-on-surface', 'font-bold');
+        btn.classList.add('text-on-surface-variant');
+        view.classList.add('hidden');
+      }
+    });
+  }
+
+  // Slider & direct input sync
+  const slider = document.getElementById('capacity-slider');
+  const input = document.getElementById('capacity-input');
+  const badge = document.getElementById('capacity-badge');
+
+  slider.addEventListener('input', (e) => {
+    input.value = e.target.value;
+    badge.innerText = e.target.value;
+  });
+
+  input.addEventListener('input', (e) => {
+    slider.value = e.target.value;
+    badge.innerText = e.target.value;
+  });
+
+  // Status buttons toggle
+  const statusButtons = document.querySelectorAll('.status-btn');
+  statusButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      statusButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold');
+        b.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+      btn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+    });
+  });
+
+  // Action Console logging helper
+  const consoleFeed = document.getElementById('action-console-feed');
+  function logConsole(message, type = 'info') {
+    const el = document.createElement('div');
+    const timestamp = new Date().toISOString().substring(11, 19);
+    if (type === 'error') {
+      el.className = 'text-error font-semibold';
+      el.innerText = `[409 CONFLICT ${timestamp}] ${message}`;
+    } else if (type === 'success') {
+      el.className = 'text-tertiary';
+      el.innerText = `[COMMIT OK ${timestamp}] ${message}`;
+    } else {
+      el.className = 'text-on-surface-variant';
+      el.innerText = `[NOTICE ${timestamp}] ${message}`;
+    }
+    consoleFeed.prepend(el);
+  }
+
+  // Populate Workbench from table clicks
+  function populateWorkbench(title, cap, status) {
+    const select = document.getElementById('target-event');
+    slider.value = cap;
+    input.value = cap;
+    badge.innerText = cap;
+    logConsole(`Target event focused: ${title}. Ready for mutation.`);
+    
+    statusButtons.forEach(b => {
+      if (b.getAttribute('data-status') === status) {
+        b.click();
+      }
+    });
+  }
+
+  // Commit mutation simulation
+  document.getElementById('apply-override-btn').addEventListener('click', () => {
+    const val = input.value;
+    const activeStatus = document.querySelector('.status-btn.font-bold').getAttribute('data-status');
+    logConsole(`MUTATION COMMITTED: Event max_capacity set to ${val}, status set to '${activeStatus}'. Invalidation broadcast sent to redis-cluster.`, 'success');
+  });
+
+  // Simulate 409 conflict
+  document.getElementById('simulate-conflict-btn').addEventListener('click', () => {
+    logConsole('HTTP 409 Conflict: Registration quota locked by concurrent organizer transaction. (P2034: Transaction failed due to write conflict)', 'error');
+  });
+
+  // Refresh Telemetry Icon spin
+  document.getElementById('refresh-telemetry-btn').addEventListener('click', () => {
+    const icon = document.getElementById('refresh-icon');
+    icon.classList.add('rotate-180');
+    logConsole('Telemetry polled across all clusters. Latency: 12ms. All replica nodes in sync.');
+    setTimeout(() => {
+      icon.classList.remove('rotate-180');
+    }, 500);
+  });
+</script></main></div></body></html>
